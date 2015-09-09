@@ -1,0 +1,21 @@
+{
+  "name": "Post List",
+  "version": "0.0.0",
+  "description": "Exemplo de um Listagem de cards",
+  "homepage": "",
+  "keywords": [
+  ],
+  "author": "Marcus Silva <marcusvinicius30798@gmail.com>",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.1"
+  }
+}

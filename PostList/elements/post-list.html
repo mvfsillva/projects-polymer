@@ -1,0 +1,25 @@
+<dom-module id="post-list">
+<template>
+    <template is="dom-repeat" items="{{data}}">
+      <post-card>
+        <h2>{{item.title}}</h2>
+        <h3>{{item.author}}</h3>
+        <p>{{item.post}}</p>
+      </post-card>
+    </template>
+  </template>
+  <script>
+    Polymer({
+      is: "post-list",
+      ready: function() {
+        this.data = [
+            {title: 'Primeiro Post', author: 'Autor 1', post: 'Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.'},
+            {title: 'Segundo Post' , author: 'Autor 2', post: 'Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.'},
+            {title: 'Terceiro Post', author: 'Autor 3', post: 'Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.'},
+            {title: 'Quarto Post'  , author: 'Autor 4', post: 'Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.'},
+            {title: 'Quinto Post'  , author: 'Autor 5', post: 'Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.'}
+        ];
+      }
+    });
+  </script>
+</dom-module>
